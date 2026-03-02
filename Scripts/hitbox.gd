@@ -3,7 +3,7 @@ extends CharacterBody2D
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
-
+var onMouseOver = false
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -23,3 +23,13 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+
+	if onMouseOver == true:
+		print("Mouse is over the hitbox.")
+
+
+func _on_area_2d_mouse_exited() -> void:
+	onMouseOver = false
+
+func _on_area_2d_mouse_entered() -> void:
+	onMouseOver = true
