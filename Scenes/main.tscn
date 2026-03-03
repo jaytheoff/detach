@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://drmqook6n5yna"]
 
 [ext_resource type="Script" uid="uid://cpckt6gb8u1wc" path="res://Scripts/main.gd" id="1_8gbba"]
-[ext_resource type="PackedScene" uid="uid://bw6j1fclt5any" path="res://Scenes/player_sprite.tscn" id="1_bo1nx"]
 [ext_resource type="PackedScene" uid="uid://dl0ejw4g16w8x" path="res://Scenes/hitbox.tscn" id="1_jjgbg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7u77a"]
@@ -18,11 +17,8 @@ collision_mask = 129
 position = Vector2(505, 196)
 shape = SubResource("RectangleShape2D_7u77a")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1641200803]
-position = Vector2(497, 17)
-
-[node name="Player_sprite" parent="." unique_id=59432328 instance=ExtResource("1_bo1nx")]
-position = Vector2(565, -386)
-
 [node name="Hitbox" parent="." unique_id=2004317316 instance=ExtResource("1_jjgbg")]
 position = Vector2(566, -370)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1641200803]
+position = Vector2(497, 17)
