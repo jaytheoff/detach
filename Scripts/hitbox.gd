@@ -27,7 +27,7 @@ func _physics_process(delta: float) -> void:
 	if onMouseOver == true:
 		print("Mouse is over the hitbox.")
 
-
+	
 func _on_area_2d_mouse_exited() -> void:
 	onMouseOver = false
 

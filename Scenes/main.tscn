@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://drmqook6n5yna"]
 
+[ext_resource type="Script" uid="uid://cpckt6gb8u1wc" path="res://Scripts/main.gd" id="1_8gbba"]
 [ext_resource type="PackedScene" uid="uid://bw6j1fclt5any" path="res://Scenes/player_sprite.tscn" id="1_bo1nx"]
 [ext_resource type="PackedScene" uid="uid://dl0ejw4g16w8x" path="res://Scenes/hitbox.tscn" id="1_jjgbg"]
 
@@ -7,6 +8,7 @@
 size = Vector2(1030, 178)
 
 [node name="Main" type="Node2D" unique_id=1864248204]
+script = ExtResource("1_8gbba")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1396884052]
 collision_layer = 129
