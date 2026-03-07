@@ -2,6 +2,10 @@
 
 [ext_resource type="Script" uid="uid://cus7eu87mw5pc" path="res://Scripts/test.gd" id="1_8od7v"]
 [ext_resource type="Texture2D" uid="uid://3url4mek0n1j" path="res://icon.svg" id="2_qc4db"]
+[ext_resource type="PackedScene" uid="uid://bovfewtx8mudw" path="res://Scenes/player.tscn" id="3_qc4db"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ys1qc"]
+size = Vector2(2136.5, 209)
 
 [node name="Test" type="Node2D" unique_id=1492347160]
 script = ExtResource("1_8od7v")
@@ -10,3 +14,12 @@ script = ExtResource("1_8od7v")
 texture = ExtResource("2_qc4db")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1553598809]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=88921764]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=754088779]
+position = Vector2(188, 426)
+shape = SubResource("RectangleShape2D_ys1qc")
+
+[node name="Player" parent="StaticBody2D" unique_id=1848269541 instance=ExtResource("3_qc4db")]
+position = Vector2(-429, 143)
