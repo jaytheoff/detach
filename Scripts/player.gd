@@ -4,6 +4,12 @@ extends CharacterBody2D
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
+func _ready() -> void:
+	pass # Replace with function body.
+
+func _process(delta: float) -> void:
+	Global.player_pos_x = float(self.position.x)
+	Global.player_pos_y = float(self.position.y)
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.

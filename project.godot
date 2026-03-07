@@ -14,10 +14,19 @@ config/name="Detach"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Global="*uid://dbhim8vk77118"
+
 [display]
 
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+
+[global_group]
+
+Hitbox=""
+Default=""
 
 [input]
 
